@@ -10,16 +10,16 @@ import sys
 sys.setrecursionlimit(10000)        # override python's default recursion depth (Change this number as needed)
 
 
-def anyfib(n2,n1,term):
+def anyfib(n2,n1,t):
     '''
     Given two numbers (n1 and n2) it will compute the fib number
     based on the term
     '''
 
-    if term == 0:
+    if t == 0:
         return n2
     else:
-        return anyfib(n2+n1,n2,term-1)
+        return anyfib(n2+n1,n2,t-1)          #adds the two previous number and uses recursion
 
 
 def main():
